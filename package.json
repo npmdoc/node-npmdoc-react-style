@@ -1,1 +1,39 @@
-{     "devDependencies": {         "react-style": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmdoc-react-style",     "homepage": "https://github.com/npmdoc/node-npmdoc-react-style",     "repository": {         "type": "git",         "url": "https://github.com/npmdoc/node-npmdoc-react-style.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "api documentation for [react-style (v0.5.5)](https://github.com/js-next/react-style) [![npm package](https://img.shields.io/npm/v/npmdoc-react-style.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-style) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-style.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-style)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "react-style": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-react-style",
+    "keywords": [
+        "documentation",
+        "react-style"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_react_style.js",
+    "name": "npmdoc-react-style",
+    "nameAlias": "npmdoc_react_style",
+    "nameOriginal": "npmdoc-react-style",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmdoc/node-npmdoc-react-style.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
