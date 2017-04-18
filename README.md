@@ -1,4 +1,7 @@
-# api documentation for  [react-style (v0.5.5)](https://github.com/js-next/react-style)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-style.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-style) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-style.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-style)
+# npmdoc-react-style
+
+#### api documentation for  [react-style (v0.5.5)](https://github.com/js-next/react-style)  [![npm package](https://img.shields.io/npm/v/npmdoc-react-style.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-react-style) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-react-style.svg)](https://travis-ci.org/npmdoc/node-npmdoc-react-style)
+
 #### Maintainable styling for React.js components
 
 [![NPM](https://nodei.co/npm/react-style.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-style)
