@@ -54,113 +54,12 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.react-style">module react-style</a><ol>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-style.generateUniqueCSSClassName">
-            function <span class="apidocSignatureSpan">react-style.</span>generateUniqueCSSClassName
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.react-style.generateUniqueCSSClassName">module react-style.generateUniqueCSSClassName</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.react-style.generateUniqueCSSClassName.generateUniqueCSSClassName">
-            function <span class="apidocSignatureSpan">react-style.</span>generateUniqueCSSClassName
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.react-style" id="apidoc.module.react-style">module react-style</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-style.generateUniqueCSSClassName" id="apidoc.element.react-style.generateUniqueCSSClassName">
-        function <span class="apidocSignatureSpan">react-style.</span>generateUniqueCSSClassName
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function generateUniqueCSSClassName() {
-  var allowedCharactersLength = allowedCharacters.length;
-  var key1unit = allowedCharactersLength * allowedCharactersLength;
-  var key1pos = Math.floor(currCSSKey / key1unit);
-  var key1 = allowedCharacters[key1pos - 1];
-  var key2pos = Math.floor((currCSSKey -
-  (key1 ? key1pos * key1unit : 0)) / allowedCharactersLength);
-  var key2 = allowedCharacters[key2pos - 1];
-  var key3 = allowedCharacters[(currCSSKey -
-                               (key1 ? (key1pos * key1unit) : 0) -
-                               (key2 ? key2pos * allowedCharactersLength : 0))];
-  var key = '';
-  if (key1) {
-    key += key1;
-  }
-  if (key2) {
-    key += key2;
-  }
-  if (key3) {
-    key += key3;
-  }
-  currCSSKey++;
-
-  return key;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.react-style.generateUniqueCSSClassName" id="apidoc.module.react-style.generateUniqueCSSClassName">module react-style.generateUniqueCSSClassName</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.react-style.generateUniqueCSSClassName.generateUniqueCSSClassName" id="apidoc.element.react-style.generateUniqueCSSClassName.generateUniqueCSSClassName">
-        function <span class="apidocSignatureSpan">react-style.</span>generateUniqueCSSClassName
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">function generateUniqueCSSClassName() {
-  var allowedCharactersLength = allowedCharacters.length;
-  var key1unit = allowedCharactersLength * allowedCharactersLength;
-  var key1pos = Math.floor(currCSSKey / key1unit);
-  var key1 = allowedCharacters[key1pos - 1];
-  var key2pos = Math.floor((currCSSKey -
-  (key1 ? key1pos * key1unit : 0)) / allowedCharactersLength);
-  var key2 = allowedCharacters[key2pos - 1];
-  var key3 = allowedCharacters[(currCSSKey -
-                               (key1 ? (key1pos * key1unit) : 0) -
-                               (key2 ? key2pos * allowedCharactersLength : 0))];
-  var key = '';
-  if (key1) {
-    key += key1;
-  }
-  if (key2) {
-    key += key2;
-  }
-  if (key3) {
-    key += key3;
-  }
-  currCSSKey++;
-
-  return key;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 </div>
 
